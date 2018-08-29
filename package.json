@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "./node_modules/.bin/tsc",
+    "build": "tsc",
     "postinstall": "yarn build",
     "start": "node ./build/server.js",
     "tslint:prettier-check": "tslint-config-prettier-check ./tslint.json",
