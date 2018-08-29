@@ -4,15 +4,18 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node ./build/server.js",
-    "build": "./node_modules/.bin/tsc",
-    "postinstall": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "yarn build && node ./build/server.js",
     "tslint:prettier-check": "tslint-config-prettier-check ./tslint.json",
     "tslint": "node ./node_modules/tslint/bin/tslint --force --format stylish --project tsconfig.json ./{src,__tests__}/**/*.{ts,tsx}",
     "prettier": "./node_modules/.bin/prettier ./{src,__tests__}/**/*.{ts,tsx}"
   },
   "engines": {
-    "node": "10.7.0"
+    "node": "10.7.0",
+    "npm": "6.1.0",
+    "yarn": "1.9.4"
   },
   "keywords": [],
   "author": "",
