@@ -11,11 +11,6 @@
     "tslint": "node ./node_modules/tslint/bin/tslint --force --format stylish --project tsconfig.json ./{src,__tests__}/**/*.{ts,tsx}",
     "prettier": "./node_modules/.bin/prettier ./{src,__tests__}/**/*.{ts,tsx}"
   },
-  "engines": {
-    "node": "10.7.0",
-    "npm": "6.1.0",
-    "yarn": "1.9.4"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
