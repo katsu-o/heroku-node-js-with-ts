@@ -17,7 +17,7 @@ router.get('/:name', (req: Request, res: Response) => {
   const { name } = req.params;
 
   // Greet the given name
-  res.send(`Good morining, ${name}`);
+  res.send(`Good evening, ${name}`);
 });
 
 // Export the express.Router() instance to be used by server.ts
